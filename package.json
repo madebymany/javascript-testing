@@ -1,0 +1,21 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "unit-node": "node test/unit.js",
+    "unit-browser": "browserify test/unit.js | tape-run",
+    "integration": "node bin/test.js",
+    "test": "npm run unit-node && npm run unit-browser && npm run integration"
+  },
+  "author": "Callum Jefferies <callum@callumj.uk> (http://callumj.uk/)",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "budo": "^8.2.1",
+    "nightmare": "^2.3.3",
+    "tape": "^4.5.1",
+    "tape-run": "^2.1.3"
+  }
+}
